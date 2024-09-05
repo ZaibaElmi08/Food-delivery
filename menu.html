@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Delicious Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS -->
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* Style menu items */
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            width: calc(50% - 20px);
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center; /* Center align the content */
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            max-height: 200px; /* Limit the height of the image */
+        }
+        .order-now-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        /* Style for footer icons */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        /* Hidden class */
+        .hidden {
+            display: none;
+        }
+        /* Explore more button */
+        #explore-more-btn {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Delicious Food Delivery">
+            <h1>Delicious Food Delivery</h1>
+            <nav>
+                <a href="front.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact</a>
+                <a href="user_account.html">User Account</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Menu</h2>
+        <!-- Initial six visible menu items -->
+        <div class="menu-item">
+            <img src="Classic-Cheeseburger.jpg" alt="Classic Cheeseburger">
+            <h3>Classic Cheeseburger</h3>
+            <p>Our juicy chicken patty topped with melted cheese.</p>
+            <p>$9.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="pepperoni-pizza.jpg" alt="Pepperoni Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>Thin crust pizza loaded with pepperoni slices.</p>
+            <p>$12.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="California-Roll.jpg" alt="California Roll">
+            <h3>California Roll</h3>
+            <p>Fresh sushi rolls with avocado and crab meat.</p>
+            <p>$15.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="pasta.jpg" alt="Spaghetti Carbonara">
+            <h3>Spaghetti Carbonara</h3>
+            <p>Classic Italian pasta dish with creamy sauce and bacon.</p>
+            <p>$11.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="salad.jpg" alt="Greek Salad">
+            <h3>Greek Salad</h3>
+            <p>Fresh salad with tomatoes, cucumbers, olives, and feta cheese.</p>
+            <p>$8.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="fish.jpg" alt="Fish Steak">
+            <h3>Fish Steak</h3>
+            <p>Fish steak cooked to perfection.</p>
+            <p>$19.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <!-- Additional six hidden menu items -->
+        <div class="menu-item hidden">
+            <img src="biriyani.jpg" alt="Biriyani">
+            <h3>Biriyani</h3>
+            <p>Fragrant rice infused with tender chicken.</p>
+            <p>$10.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item hidden">
+            <img src="soup.jpg" alt="Tomato Soup">
+            <h3>Tomato Soup</h3>
+            <p>Homemade tomato soup served with garlic bread.</p>
+            <p>$6.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item hidden">
+            <img src="chicken-burrito.jpg" alt="Chicken Burrito">
+            <h3>Chicken Burrito</h3>
+            <p>Large flour tortilla stuffed with seasoned chicken, rice, beans, and cheese.</p>
+            <p>$11.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item hidden">
+            <img src="shawarma.jpg" alt="Chicken Shawarma">
+            <h3>Chicken Shawarma</h3>
+            <p>Grilled chicken wrapped in pita bread with garlic sauce and veggies.</p>
+            <p>$9.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item hidden">
+            <img src="french-fries.jpg" alt="French Fries">
+            <h3>French Fries</h3>
+            <p>Crispy, golden batons of perfectly fried potato.</p>
+            <p>$10.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <div class="menu-item hidden">
+            <img src="paneer-makhani.jpg" alt="Paneer Makhani">
+            <h3>Paneer Makhani</h3>
+            <p>A rich and creamy Indian delicacy featuring succulent cubes of paneer.</p>
+            <p>$16.99</p>
+            <button class="order-now-btn">Order Now</button>
+        </div>
+        <!-- Explore more button -->
+        <button id="explore-more-btn">Explore More</button>
+    </div>
+    <footer>
+        <p>Delicious Food Delivery &copy; 2024</p>
+        <p>Contact us: <a href="mailto:info@deliciousfood.com">info@deliciousfood.com</a> | Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+        <!-- Footer icons -->
+        <div class="social-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <script>
+        // Function to toggle visibility of hidden menu items
+        document.getElementById('explore-more-btn').addEventListener('click', function() {
+            var hiddenItems = document.querySelectorAll('.menu-item.hidden');
+            hiddenItems.forEach(function(item) {
+                item.classList.remove('hidden');
+            });
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
